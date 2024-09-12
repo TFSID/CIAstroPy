@@ -1,0 +1,11 @@
+services:
+  codeigniter-web:
+    image: codeigniter-web
+    build:
+      context: ./app/web-persuratan/
+      dockerfile: ./Dockerfile
+    container_name: codeigniter-web
+    # env_file:
+    #   - app/web-persuratan/.env
+    # environment:
+    #   <<: *common_env
