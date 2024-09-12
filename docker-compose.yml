@@ -5,6 +5,8 @@ services:
       context: ./app/web-persuratan/
       dockerfile: ./Dockerfile
     container_name: codeigniter-web
+    ports:
+      - "8000:8080"
     # env_file:
     #   - app/web-persuratan/.env
     # environment:
