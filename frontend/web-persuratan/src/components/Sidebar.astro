@@ -1,0 +1,159 @@
+---
+
+---
+<sidebar>
+  	  <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <br>
+                            <h1>Instinct</h1>
+                        </div>
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex">
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>			
+                        <div class="dropdown d-none d-lg-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown d-inline-block">
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                            </div>
+                        </div>
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="bx bx-cog bx-spin"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+                <div data-simplebar class="h-100">
+                <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <p><a href="/" class="d-inline-flex focus-ring focus-ring-primary py-1 px-2 text-decoration-none border rounded-2">Menu</a></p>
+                            <li class="menu-title" ="t-apps"> Asset Management </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bxs-building"></i>
+                                    <span ="bi bi-card-list"> Asset Management</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">				
+                                    <li><a href="/endpoint" ="t-dashboards">Endpoint | Server </a></li>
+                                    <li><a href="/webserver" ="t-dashboards">Web Server</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-title" ="t-apps"> Report </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bxs-report"></i>
+                                    <span ="bi bi-card-list">Generate Report </span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">				
+                                    <li><a href="/reportshift" ="t-dashboards">Generate Report per Shift </a></li>
+                                    <li><a href="/reportr2" ="t-dashboards">Generate Report R2 Only</a></li>
+                                    <li><a href="/maintenance" ="t-dashboards">Generate Report Bulanan</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-title" ="t-apps"> Monitoring </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-desktop"></i>
+                                    <span ="t-dashboards">Live Monitoring </span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">				
+                                    <li><a href="/monitoring1" ="t-dashboards">Attack, DNS, Malware</a></li>
+                                    <li><a href="/monitoring2" ="t-dashboards">SSH, RDP, SMB</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-title" ="t-apps"> Event </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-list-ul"></i>
+                                    <span ="t-dashboards"> Create Event </span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">				
+                                    <li><a href="/maintenance" ="t-dashboards">Discord</a></li>
+                                    <li><a href="/workbench" ="t-dashboards">Workbench</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="/login"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span ="t-logout">Logout</span></a>
+                                <a class="dropdown-item text-danger" href="/login"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span ="t-logout">login</span></a>
+                            </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+    </sidebar>
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        
+    <div data-simplebar class="h-150">
+        <div class="rightbar-title d-flex align-items-center px-1 py-2">
+            <h5 class="m-0 me-2">Settings</h5>
+            <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                <i class="mdi mdi-close noti-icon"></i>
+            </a>
+        </div>
+
+        <!-- Settings -->
+        <hr class="mt-0" />
+        <h6 class="text-center mb-0">Choose Layouts</h6>
+
+        <div class="p-4">
+            <div class="mb-2">
+                <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
+            </div>
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+            </div>
+            <div class="mb-2">
+                <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+            </div>
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
+                <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+            </div>
+        </div>
+        
+    </div> <!-- end slimscroll-menu-->
+</div>
+<!-- /Right-bar -->
+
+<!-- Right bar overlay-->
+<div class="rightbar-overlay"></div>

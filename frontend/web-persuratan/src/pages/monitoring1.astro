@@ -1,0 +1,195 @@
+---
+import Layout from '../layouts/LayoutMonitoring1.astro';
+---
+<Layout title="Monitoring | Attack, DNS, Malware">
+		<div class="main-content">
+			<div class="page-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+								<h1 class="mb-sm-0 font-size-40">Monitoring Logs Attack | DNS | Malware</h1>
+                                <div>
+                                    <button type="button" class="btn btn-info waves-effect waves-light">
+                                        <i class="bx bx-search font-size-16 align-middle me-2"></i> Refresh !
+                                    </button>
+                                </div>
+							</div>
+						</div>
+					</div>
+					<!-- end page title -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    </form>
+                                    <h3>Attack Logs </h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped-columns mb-0">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th>DateTime</th>
+                                                    <th>Rulename</th>
+                                                    <th>SourceIP</th>
+                                                    <th>DestinationIP</th>
+                                                    <th>Request</th>
+                                                    <th>BotURL</th>
+                                                    <th>UUID</th>
+                                                    <th>Severity</th>
+                                                    <th>Bloclist SourceIP / Payload</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2024-06-07 03:28:48</th>
+                                                    <td>A web attack returned code 200 (success)
+                                                    </td>
+                                                    <td>213.109.202.145</td>
+                                                    <td>Prancis</td>
+                                                    <td> </td>
+                                                    <td>Windows 10</td>
+                                                    <td>Endpoint Protection</td>
+                                                    <td>Endpoint Protection</td>
+                                                    <td>Endpoint Protection</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2024-06-07 03:28:48</th>
+                                                    <td>Laptop Raiden</td>
+                                                    <td>11.96.35.69</td>
+                                                    <td>Raiden</td>
+                                                    <td>Windows</td>
+                                                    <td>Windows 10</td>
+                                                    <td>Endpoint Protection</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2024-06-07 03:28:48</th>
+                                                    <td>Zhongli</td>
+                                                    <td>78.96.65.65</td>
+                                                    <td>Childe</td>
+                                                    <td>Windows</td>
+                                                    <td>Windows 10</td>
+                                                    <td>Server Protection</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            </form>
+                            <h3> Suspicious DNS Logs  </h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped-columns mb-0">
+                
+                                    <thead>
+                                        <tr>
+                                            <th>DateTime </th>
+                                            <th>SourceIP</th>
+                                            <th>DestinationIP</th>
+                                            <th>Rulename</th>
+                                            <th>cccaDestination:</th>
+                                            <th>UUID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Laptop Kazuha</td>
+                                            <td>20.36.98.32</td>
+                                            <td>Anydesk RMM - DNS (Response) - Beta</td>
+                                            <td>boot.net.anydesk.com</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Laptop Raiden</td>
+                                            <td>11.96.35.69</td>
+                                            <td>DNS response of a queried malware Command and Control domain</td>
+                                            <td>ilo.brenz.pl</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Zhongli</td>
+                                            <td>78.96.65.65</td>
+                                            <td>Possible CONFICKER DNS Response</td>
+                                            <td>gtxvdqvuweqs.com</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            </form>
+                            <h3>Malicious Malware on Endpoint Logs</h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped-columns mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>DateTime </th>
+                                            <th>Endpoint Hostname</th>
+                                            <th>Endpoint IP</th>
+                                            <th>Regional | Endpoint Grup</th>
+                                            <th>actResult</th>
+                                            <th>Filename</th>
+                                            <th>Malname</th>
+                                            <th>UUID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Laptop Kazuha</td>
+                                            <td>20.36.98.32</td>
+                                            <td>Prancis</td>
+                                            <td>Passed</td>
+                                            <td>KMS Auto Crack Game</td>
+                                            <td>Possible_GENISO-6</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Laptop Raiden</td>
+                                            <td>11.96.35.69</td>
+                                            <td>Raiden</td>
+                                            <td>Passed</td>
+                                            <td>KMS Auto Crack Game</td>
+                                            <td>Possible_GENISO-6</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2024-06-07 03:28:48</th>
+                                            <td>Zhongli</td>
+                                            <td>78.96.65.65</td>
+                                            <td>Childe</td>
+                                            <td>Passed</td>
+                                            <td>KMS Auto Crack Game</td>
+                                            <td>Possible_GENISO-6</td>
+                                            <td>18421064842105484611548</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+</Layout>
+
+

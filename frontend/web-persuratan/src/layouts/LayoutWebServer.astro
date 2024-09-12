@@ -1,0 +1,68 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <!-- App js -->
+    <script is:inline src="assets/js/plugin.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+      <Sidebar />
+      <main class="content">
+        <slot />
+      </main>
+    </div>
+    <div class="footer">
+      <Footer />
+  </body>
+<footer>
+    <script is:inline src="assets/libs/jquery/jquery.min.js"></script>
+    <script is:inline src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script is:inline src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script is:inline src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script is:inline src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script is:inline src="assets/js/plugin.js"></script>
+    <script is:inline src="assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+    <script is:inline src="assets/js/pages/form-wizard.init.js"></script>
+
+    <script is:inline src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- Required datatable js -->
+    <script is:inline src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script is:inline src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script is:inline src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script is:inline src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <script is:inline src="assets/js/pages/ecommerce-order-list.init.js"></script>
+
+    <script is:inline src="assets/js/app.js"></script>
+
+    
+</footer>

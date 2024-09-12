@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/LayoutCreateWorkbench.astro";
+---
+<Layout title="Workbench | Create">
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0 font-size-18">Create New Workbench</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <form id="createproject-form" autocomplete="off" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-body">  
+                                    <div class="mb-3">
+                                        <label class="form-label" for="project-status-input">Severity</label>
+                                        <select class="form-select" id="project-status-input">
+                                            <option value="Completed" selected >Critical</option>
+                                            <option value="Inprogress" >High</option>
+                                            <option value="Inprogress" >Medium</option>
+                                            <option value="Inprogress" >Low</option>
+                                            <option value="Inprogress" >Info</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select Workbench Status</div>
+                                    </div>
+
+                                    <!-- Tags Workbench  -->
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">Tags</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Tags Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan Tags Workbench terlebih dahulu</div>
+                                    </div>
+
+                                    <!-- Action Workbench  -->
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">Action</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Action Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan Action Workbench terlebih dahulu</div>
+                                    </div>
+
+                                    <input type="hidden" class="form-control" id="formAction" name="formAction" value="add">
+                                    <input type="hidden" class="form-control" id="project-id-input">
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">Judul Workbench</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Judul Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan Judul Workbench terlebih dahulu</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Workbench Image</label>
+                                        
+                                        <div class="text-center">
+                                            <div class="position-relative d-inline-block">
+                                                <div class="position-absolute bottom-0 end-0">
+                                                    <label for="project-image-input" class="mb-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Select Image">
+                                                        <div class="avatar-xs">
+                                                            <div class="avatar-title bg-light border rounded-circle text-muted cursor-pointer shadow font-size-16">
+                                                                <i class='bx bxs-image-alt'></i>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                    <input class="form-control d-none" value="" id="project-image-input" type="file" accept="image/png, image/gif, image/jpeg">
+                                                </div>
+                                                <div class="avatar-lg">
+                                                    <div class="avatar-title bg-light rounded-circle">
+                                                        <img src="#" id="projectlogo-img" class="avatar-md h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="projectdesc-input" class="form-label">Workbench Description</label>
+                                        <textarea class="form-control" id="projectdesc-input" rows="3" placeholder="Enter project description..." required></textarea>
+                                        <div class="invalid-feedback">Please enter a project description.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">UUID</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter UUID Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan UUID terlebih dahulu</div>
+                                    </div>
+                                    <!-- <div>
+                                        <label class="form-label">Attached Files</label>
+                                        <div class="fallback dropzone" id="myId" enctype="multipart/form-data">
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple />
+                                            </div>
+            
+                                            <div class="dz-message needsclick">
+                                                <div class="mb-3">
+                                                    <center><i class="display-4 text-muted bx bxs-cloud-upload"></i></center>
+                                                </div>
+            
+                                                <center><h4>Drop files here or click to upload.</h4></center>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+                            
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Close Workbench</h5>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="project-status-input">Findings</label>
+                                        <select class="form-select" id="project-status-input">
+                                            <option value="Completed" selected >Confirmed Insident</option>
+                                            <option value="Inprogress" >False Positive - Turned out to be false but was an intersting case</option>
+                                            <option value="Inprogress" >False Positive - Resulted from a penetration test</option>
+                                            <option value="Inprogress" >False Positive - Not an attack but was a business policy violation</option>
+                                            <option value="Inprogress" >False Positive - background noise</option>
+                                            <option value="Inprogress" >False Positive - Obsivious false Positive</option>
+                                            <option value="Inprogress" >False Positive - Others</option>
+                                            <option value="Delay">Benign True Positive</option>
+                                            <option value="Delay">Noteworthy</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select Workbench Status</div>
+                                    </div>
+
+                                    <div>
+                                        <label class="form-label" for="project-visibility-input">Status</label>
+                                        <select class="form-select" id="project-visibility-input">
+                                            <option value="Private">Open</option>
+                                            <option value="Public">in Progress</option>
+                                            <option value="Team" selected >Closed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Due Date</h5>
+                                    
+                                    <input type="text" id="duedate-input" class="form-control" placeholder="Select due date" name="due date" data-date-format="dd M, yyyy" data-provide="datepicker" data-date-autoclose="true" required />
+                                    <div class="invalid-feedback">Please select due date.</div>
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-lg-8">
+                            <div class="text-end mb-4">
+                                <button type="submit" class="btn btn-primary">Create Workbench</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </form>
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+		</div>
+	</div>
+</Layout>
+
+
