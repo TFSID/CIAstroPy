@@ -15,7 +15,7 @@ RUN apk --no-cache add \
     unzip
 
 # Install PHP extensions
-RUN docker-php-ext-install intl zip pdo pdo_mysql
+RUN docker-php-ext-install intl zip pdo pdo_mysql mysqli
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -29,4 +29,4 @@ RUN composer update
 RUN composer install
 CMD php -v
 
-CMD ["php", "spark", "serve"]
+CMD ["php", "spark", "serve", "--host", "0.0.0.0"]
