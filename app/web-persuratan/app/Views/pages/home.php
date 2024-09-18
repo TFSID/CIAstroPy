@@ -7,10 +7,10 @@
 </head>
 <body>
     <?php 
-    echo view('components/header'); 
-    echo view('components/navbar'); 
-    echo view('components/sidebar'); 
-    echo view('components/footer'); 
+    echo view('layouts/dashboard/header'); 
+    echo view('layouts/dashboard/navbar'); 
+    echo view('layouts/dashboard/sidebar'); 
+    echo view('layouts/dashboard/footer'); 
     ?>
 </body>
 </html>
