@@ -1,27 +1,22 @@
 ---
 interface Props {
 	title: string;
-    // header: Astro.;
 }
 
 import BaseHeader from '../components/BaseHeader.astro';
+import Header from './Header.astro';
+import Body from './Body.astro';
+import Content from './Content.astro';
 
 const { title } = Astro.props;
-// const { header } = Astro.props;
 
 ---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <BaseHeader />
-    <!-- { header } -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-</head>
-<body>
-    <main class="content">
+<Header title={title} />
+<Body>
+    <Content>
         <slot />
-    </main>
-</body>
+    </Content>
+</Body>
 </html>
