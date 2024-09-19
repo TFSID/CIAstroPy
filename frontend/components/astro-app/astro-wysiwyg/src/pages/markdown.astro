@@ -1,0 +1,24 @@
+---
+import { marked } from 'marked';
+import { markdown } from '@astropub/md';
+
+interface Props {
+    Content: string
+}
+
+const {Content: MarkdownContent} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Markdown</title>
+</head>
+<body>
+    {await markdown(MarkdownContent)}
+</body>
+<script>
+    
+</script>
+</html>

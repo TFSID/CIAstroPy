@@ -1,0 +1,27 @@
+---
+interface Props {
+	title: string;
+    // header: Astro.;
+}
+
+import BaseHeader from '../components/BaseHeader.astro';
+
+const { title } = Astro.props;
+// const { header } = Astro.props;
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <BaseHeader />
+    <!-- { header } -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <main class="content">
+        <slot />
+    </main>
+</body>
+</html>

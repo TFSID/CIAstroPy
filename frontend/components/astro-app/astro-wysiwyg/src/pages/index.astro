@@ -1,0 +1,28 @@
+---
+
+// import JavaScriptLibs from '../components/JavaScriptLibs.astro';
+import Layout from '../layouts/Layout.astro';
+import ScriptsLayout from '../layouts/ScriptsLayout.astro';
+import IndexPageJS from '../components/js/IndexPageJS.astro'
+import IndexPageLinks from '../components/headerLinks/IndexPageLinks.astro';
+import Markdown from './markdown.astro';
+const content = '# Contoh Isi Content'
+---
+
+<Layout title="Markdown Live Preview">
+	<!-- Create the toolbar container -->
+<div id="toolbar">
+	<button class="ql-bold">Bold</button>
+	<button class="ql-italic">Italic</button>
+  </div>
+  
+  <!-- Create the editor container -->
+  <div id="editor">
+	<p>Hello World!</p>
+	<Markdown Content={content}/>
+	<p>Some initial <strong>bold</strong> text</p>
+	<p><br /></p>
+  </div>
+</Layout>
+<IndexPageJS />
+
